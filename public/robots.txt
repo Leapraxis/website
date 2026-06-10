@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# LLM-Crawler explizit erlaubt
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GoogleExtended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://www.lea-savelsberg.de/sitemap.xml
