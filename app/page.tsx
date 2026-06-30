@@ -1,13 +1,10 @@
 import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
-import Topics from '@/components/Topics';
-import Services from '@/components/Services';
+import Behandlung from '@/components/Behandlung';
 import Werdegang from '@/components/Werdegang';
-import Manifesto from '@/components/Manifesto';
 import Costs from '@/components/Costs';
 import Approach from '@/components/Approach';
-import FAQ from '@/components/FAQ';
 import MapSection from '@/components/MapSection';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -23,13 +20,10 @@ export default function Home() {
         <Nav />
         <Hero />
         <About />
-        <Topics />
-        <Services />
+        <Behandlung />
         <Werdegang />
-        <Manifesto />
         <Costs />
         <Approach />
-        <FAQ />
         <MapSection />
         <Contact />
         <Footer />

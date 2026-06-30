@@ -5,19 +5,19 @@ const sans = "'Hanken Grotesk', system-ui, sans-serif";
 const items = [
   {
     label: 'Privatversicherte (PKV)',
-    text: 'Die Abrechnung erfolgt nach der Gebührenordnung für Ärzte (GOÄ/GOP). Privatversicherte reichen die Rechnungen direkt bei ihrer Krankenversicherung ein. Die Erstattung richtet sich nach Ihrem individuellen Tarif – bitte klären Sie vorab den Umfang Ihrer Erstattung mit Ihrer PKV.',
+    text: 'Als Privatpatientin oder Privatpatient reichen Sie die Rechnung in der Regel direkt bei Ihrer Krankenversicherung ein. Die Erstattung hängt von Ihrem jeweiligen Tarif ab. Es empfiehlt sich daher, vor Beginn der Behandlung den konkreten Leistungsumfang mit Ihrer privaten Krankenversicherung zu klären.',
   },
   {
     label: 'Beihilfe & Heilfürsorge',
-    text: 'Beamtinnen und Beamte sowie Personen mit Heilfürsorgeanspruch (z. B. Polizei, Bundeswehr) können die Rechnungen in der Regel zur Erstattung bei der zuständigen Stelle einreichen. Bitte prüfen Sie vorab Ihren individuellen Beihilfeanspruch.',
+    text: 'Als Beihilfeversicherte sowie Personen mit Heilfürsorgeanspruch können Sie die Rechnungen in der Regel zur Erstattung bei der zuständigen Stelle einreichen. Bitte prüfen Sie vorab Ihren individuellen Anspruch.',
   },
   {
-    label: 'Selbstzahler',
-    text: 'Wer die Kosten selbst trägt, schließt mit mir eine individuelle Honorarvereinbarung ab. Die Abrechnung ist transparent und wird vorab besprochen. Unter bestimmten Voraussetzungen können die Kosten steuerlich als außergewöhnliche Belastung geltend gemacht werden.',
+    label: 'Selbstzahler:innen',
+    text: 'Als Selbstzahlerin oder Selbstzahler schließen Sie mit mir eine individuelle Honorarvereinbarung ab. Die Kosten orientieren sich an der GOP und werden vorab transparent mit Ihnen besprochen.',
   },
   {
     label: 'Gesetzlich Versicherte (GKV)',
-    text: 'Gesetzlich Versicherte können unter bestimmten Umständen als Selbstzahler in Behandlung kommen. Eine direkte Abrechnung mit der gesetzlichen Krankenkasse ist nicht möglich. Gerne besprechen wir im Erstgespräch Ihre individuelle Situation.',
+    text: 'Auch gesetzlich Versicherte können unter bestimmten Voraussetzungen im Rahmen des Kostenerstattungsverfahrens eine Behandlung in meiner Praxis in Anspruch nehmen. Gerne besprechen wir Ihre individuelle Situation in einem Erstgespräch.',
   },
 ];
 
@@ -30,8 +30,8 @@ export default function Costs() {
       <h2 style={{ fontFamily: serif, fontSize: 40, fontWeight: 400, color: C.ink, margin: '12px 0 16px', letterSpacing: '-0.02em' }}>
         Kosten & Erstattung
       </h2>
-      <p style={{ fontFamily: sans, fontSize: 17, lineHeight: 1.65, color: C.inkSoft, maxWidth: 600, marginBottom: 48 }}>
-        Meine Praxis ist eine Privatpraxis für Erwachsene ohne kassenärztliche Zulassung. Ich behandle Privatversicherte, Beihilfeberechtigte, Selbstzahlerinnen und -zahler sowie gesetzlich Versicherte unter bestimmten Voraussetzungen.
+      <p style={{ fontFamily: sans, fontSize: 17, lineHeight: 1.65, color: C.inkSoft, maxWidth: 640, marginBottom: 48 }}>
+        In meiner Praxis biete ich psychotherapeutische Behandlung für Erwachsene an und begleite Privatversicherte, Beihilfeberechtigte sowie Selbstzahlerinnen und Selbstzahler. Die Abrechnung und Kosten orientieren sich an der geltenden Gebührenordnung für Psychotherapeut:innen (GOP). Auch gesetzlich Versicherte können unter bestimmten Voraussetzungen eine Behandlung in Anspruch nehmen.
       </p>
       <div className="costs-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
         {items.map((item) => (
@@ -44,7 +44,7 @@ export default function Costs() {
         ))}
       </div>
       <p style={{ fontFamily: sans, fontSize: 14.5, lineHeight: 1.6, color: C.inkSoft, marginTop: 24, paddingTop: 20, borderTop: `1px solid ${C.line}`, maxWidth: 680 }}>
-        <strong style={{ color: C.ink }}>Hinweis:</strong> Die genaue Höhe des Stundenhonorars besprechen wir im Erstgespräch. Alle Preise richten sich nach der GOÄ und werden transparent kommuniziert.
+        <strong style={{ color: C.ink }}>Hinweis:</strong> Die genaue Höhe des Honorars besprechen wir im Erstgespräch. Alle Kosten richten sich nach der GOP und werden transparent kommuniziert.
       </p>
     </section>
   );

@@ -11,12 +11,18 @@ export default function About() {
       <h2 style={{ fontFamily: serif, fontSize: 40, fontWeight: 400, color: C.ink, margin: '12px 0 24px', letterSpacing: '-0.02em' }}>
         Über mich
       </h2>
-      <p style={{ fontFamily: sans, fontSize: 18, lineHeight: 1.7, color: C.inkSoft, maxWidth: 640, marginBottom: 20 }}>
-        Ich bin Lea Savelsberg, seit 2024 approbierte Psychologische Psychotherapeutin mit Schwerpunkt Verhaltenstherapie. Meine klinische Erfahrung habe ich an psychiatrischen Stationen und in der ambulanten Psychotherapie in Hamburg gesammelt – heute arbeite ich in eigener Privatpraxis.
-      </p>
-      <p style={{ fontFamily: sans, fontSize: 18, lineHeight: 1.7, color: C.inkSoft, maxWidth: 640 }}>
-        Mir ist ein Raum wichtig, in dem Sie offen sprechen können – ohne Bewertung und in Ihrem Tempo. Gemeinsam schauen wir auf das, was belastet, und entwickeln konkrete Schritte, die im Alltag tragen.
-      </p>
+      {[
+        'Ich bin Lea Savelsberg, approbierte Psychologische Psychotherapeutin mit Schwerpunkt Verhaltenstherapie. In meiner Arbeit verbinde ich wissenschaftlich fundierte Psychotherapie mit einer wertschätzenden und individuellen Begleitung.',
+        'Schon früh hat mich interessiert, was Menschen bewegt, wie sie mit Herausforderungen umgehen und welche Wege sie finden, schwierige Lebensphasen zu bewältigen. Dieses Interesse an individuellen Lebensgeschichten und persönlichen Entwicklungsprozessen begleitet mich bis heute und hat meinen beruflichen Weg geprägt.',
+        'Die Erfahrungen, die wir im Laufe unseres Lebens machen, prägen unser Denken, Fühlen und Handeln. Gleichzeitig verstehe ich Entwicklung und Veränderung als einen fortlaufenden Prozess. Die Verhaltenstherapie bietet die Möglichkeit, belastende Gedanken- und Verhaltensmuster besser zu verstehen, neue Erfahrungen zu sammeln und alternative Handlungsmöglichkeiten zu erproben. Diese Haltung prägt meine therapeutische Arbeit.',
+        'Meine klinische Erfahrung habe ich sowohl auf psychiatrischen Stationen als auch in der ambulanten psychotherapeutischen Versorgung gesammelt. Heute begleite ich Menschen in meiner Privatpraxis.',
+        'Mir ist ein vertrauensvoller und wertschätzender Rahmen wichtig, in dem Sie offen über Ihre Anliegen sprechen können. Gemeinsam betrachten wir die Gedanken, Gefühle und Verhaltensmuster, die zu Ihren Belastungen beitragen oder diese aufrechterhalten. Dabei geht es nicht nur darum, Schwierigkeiten besser zu verstehen, sondern auch darum, konkrete und alltagsnahe Strategien zu entwickeln, die nachhaltige Veränderungen ermöglichen.',
+        'Mein Ziel ist es, Sie dabei zu unterstützen, neue Handlungsspielräume zu gewinnen, eigene Stärken zu nutzen und Ihren persönlichen Weg selbstbestimmt zu gestalten.',
+      ].map((para, i) => (
+        <p key={i} style={{ fontFamily: sans, fontSize: 18, lineHeight: 1.7, color: C.inkSoft, maxWidth: 680, marginBottom: 18 }}>
+          {para}
+        </p>
+      ))}
     </section>
   );
 }

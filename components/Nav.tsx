@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { MAILTO_TERMIN } from '@/lib/contact';
 
 const C = {
   ink: '#24302a',
@@ -15,10 +16,10 @@ const grain = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg
 
 const navLinks = [
   { label: 'Über mich',  id: 'ueber-mich' },
-  { label: 'Leistungen', id: 'leistungen' },
-  { label: 'Ablauf',     id: 'ablauf' },
+  { label: 'Behandlung', id: 'leistungen' },
+  { label: 'Werdegang',  id: 'werdegang' },
   { label: 'Kosten',     id: 'kosten' },
-  { label: 'FAQ',        id: 'faq' },
+  { label: 'Ablauf',     id: 'ablauf' },
 ];
 
 export default function Nav() {
@@ -62,7 +63,7 @@ export default function Nav() {
         {/* Desktop CTA */}
         <a
           className="desktop-cta"
-          href="mailto:praxis@savelsberg-psychotherapie.de"
+          href={MAILTO_TERMIN}
           style={{ fontFamily: sans, fontSize: 14, fontWeight: 600, color: C.ink, background: 'transparent', border: `1.5px solid ${C.accent}`, borderRadius: 999, padding: '10px 22px', cursor: 'pointer', letterSpacing: '0.01em', display: 'inline-block' }}
         >
           Termin anfragen
@@ -133,7 +134,7 @@ export default function Nav() {
           {/* Unten: CTA + Kontakt */}
           <div style={{ position: 'relative', paddingTop: 32, borderTop: '1px solid rgba(251,249,244,0.15)' }}>
             <a
-              href="mailto:praxis@savelsberg-psychotherapie.de"
+              href={MAILTO_TERMIN}
               onClick={() => setMenuOpen(false)}
               style={{
                 display: 'inline-block', marginBottom: 24,

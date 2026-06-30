@@ -1,3 +1,5 @@
+import { MAILTO_TERMIN } from '@/lib/contact';
+
 const C = {
   bg: '#fbf9f4',
   panel: '#f1ede3',
@@ -31,13 +33,13 @@ export default function Hero() {
           </div>
           <div className="vd-reveal" style={{ animationDelay: '300ms', marginTop: 30 }}>
             <p style={{ fontFamily: sans, fontSize: 19, lineHeight: 1.7, color: C.inkSoft, maxWidth: 440, margin: 0 }}>
-              Psychotherapeutische Begleitung für Erwachsene – ein ruhiger Ort, an dem Sie sich zeigen dürfen, wie Sie sind.
+              Professionelle psychotherapeutische Begleitung in vertrauensvoller Atmosphäre und auf Augenhöhe.
             </p>
           </div>
           <div className="vd-reveal" style={{ animationDelay: '440ms', marginTop: 40 }}>
             <div style={{ display: 'flex', gap: 16, alignItems: 'center', flexWrap: 'wrap' }}>
               <a
-                href="mailto:praxis@savelsberg-psychotherapie.de"
+                href={MAILTO_TERMIN}
                 style={{ fontFamily: sans, fontSize: 15.5, fontWeight: 600, color: C.bg, background: C.accent, border: 'none', borderRadius: 999, padding: '15px 32px', cursor: 'pointer', display: 'inline-block' }}
               >
                 Termin anfragen

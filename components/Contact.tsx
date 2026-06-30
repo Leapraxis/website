@@ -1,3 +1,5 @@
+import { MAILTO_TERMIN } from '@/lib/contact';
+
 const C = { bg: '#fbf9f4', accent: '#c0764a', forest: '#27362d' };
 const serif = "'Newsreader', Georgia, serif";
 const sans = "'Hanken Grotesk', system-ui, sans-serif";
@@ -7,7 +9,6 @@ const details = [
   ['Telefon', '0172 691 87 09', 'tel:+491726918709'],
   ['E-Mail', 'praxis@savelsberg-psychotherapie.de', 'mailto:praxis@savelsberg-psychotherapie.de'],
   ['Adresse', 'Osterstraße 124, 20255 Hamburg', null],
-  ['Abrechnung', 'Privatpatienten & Selbstzahler', null],
 ];
 
 export default function Contact() {
@@ -22,10 +23,10 @@ export default function Contact() {
               Kontakt
             </h2>
             <p style={{ fontFamily: sans, fontSize: 17.5, lineHeight: 1.6, color: 'rgba(251,249,244,0.72)', maxWidth: 380, margin: '20px 0 32px' }}>
-              Schreiben Sie mir eine kurze Nachricht – ich melde mich für einen ersten, unverbindlichen Gesprächstermin.
+              Am besten bin ich per E-Mail erreichbar. Schreiben Sie mir gerne eine kurze Nachricht – ich melde mich für einen ersten, unverbindlichen Gesprächstermin.
             </p>
             <a
-              href="mailto:praxis@savelsberg-psychotherapie.de"
+              href={MAILTO_TERMIN}
               style={{ fontFamily: sans, fontSize: 15.5, fontWeight: 600, color: C.forest, background: C.accent, border: 'none', borderRadius: 999, padding: '15px 32px', cursor: 'pointer', display: 'inline-block' }}
             >
               Jetzt anfragen

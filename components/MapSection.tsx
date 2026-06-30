@@ -13,7 +13,7 @@ export default function MapSection() {
   const [consented, setConsented] = useState(false);
 
   return (
-    <section style={{ padding: '88px 60px', background: C.panel }}>
+    <section style={{ padding: '88px 60px', background: C.bg }}>
       <div style={{ borderRadius: 24, overflow: 'hidden', border: `1px solid ${C.line}`, background: '#fff' }}>
         {/* Info-Leiste */}
         <address style={{ padding: '36px 44px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 20, fontStyle: 'normal', borderBottom: `1px solid ${C.line}` }}>
