@@ -61,13 +61,13 @@ export default function Nav() {
         </nav>
 
         {/* Desktop CTA */}
-        <a
+        <button
           className="desktop-cta"
-          href={MAILTO_TERMIN}
-          style={{ fontFamily: sans, fontSize: 14, fontWeight: 600, color: C.ink, background: 'transparent', border: `1.5px solid ${C.accent}`, borderRadius: 999, padding: '10px 22px', cursor: 'pointer', letterSpacing: '0.01em', display: 'inline-block' }}
+          onClick={() => scrollTo('kontakt')}
+          style={{ fontFamily: sans, fontSize: 14, fontWeight: 600, color: C.ink, background: 'transparent', border: `1.5px solid ${C.accent}`, borderRadius: 999, padding: '10px 22px', cursor: 'pointer', letterSpacing: '0.01em' }}
         >
           Termin anfragen
-        </a>
+        </button>
 
         {/* Hamburger-Button (nur Mobile) */}
         <button
