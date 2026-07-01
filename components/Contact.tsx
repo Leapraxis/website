@@ -1,4 +1,5 @@
 import { MAILTO_TERMIN } from '@/lib/contact';
+import CopyEmail from '@/components/CopyEmail';
 
 const C = { bg: '#fbf9f4', accent: '#c0764a', forest: '#27362d' };
 const serif = "'Newsreader', Georgia, serif";
@@ -36,7 +37,9 @@ export default function Contact() {
             {details.map(([k, v, href]) => (
               <div key={k as string}>
                 <div style={{ fontSize: 12, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(251,249,244,0.5)', marginBottom: 4 }}>{k}</div>
-                {href ? (
+                {k === 'E-Mail' ? (
+                  <CopyEmail />
+                ) : href ? (
                   <a href={href as string} style={{ fontSize: 16.5, color: C.bg, fontWeight: 500, textDecoration: 'none' }}>{v}</a>
                 ) : (
                   <div style={{ fontSize: 16.5, color: C.bg, fontWeight: 500 }}>{v}</div>
