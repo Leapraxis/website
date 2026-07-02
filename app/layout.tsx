@@ -20,8 +20,16 @@ export const metadata: Metadata = {
     description: 'Verhaltenstherapeutische Einzeltherapie für Erwachsene in Hamburg. Approbierte Psychologische Psychotherapeutin. Privatpatienten und Selbstzahler.',
     locale: 'de_DE',
     type: 'website',
-    url: 'https://www.lea-savelsberg.de',
+    url: 'https://www.savelsberg-psychotherapie.de',
     siteName: 'Privatpraxis Lea Savelsberg',
+    images: [
+      {
+        url: 'https://www.savelsberg-psychotherapie.de/Lea_savelsberg_photo.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Lea Savelsberg – Approbierte Psychologische Psychotherapeutin Hamburg',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://www.lea-savelsberg.de',
